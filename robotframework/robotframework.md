@@ -2,14 +2,22 @@
 
 ## Configuration
 * OS: Windows Pro 10 64-bit.
-* I am Using the Nokia RED IDE (the standalone version), which is available [on GitHub](https://github.com/nokia/RED)
-  * [RED download page](https://github.com/nokia/RED/releases/tag/0.8.9)
+* I am using the Nokia RED IDE (the standalone version), which is available [on GitHub](https://github.com/nokia/RED). It is based on Eclipse, and there is a version of it available on the Eclipse Marketplace.
+  * [Download page](https://github.com/nokia/RED/releases/tag/0.8.9)
+  * [Installation instructions](https://github.com/nokia/RED/blob/master/installation.md)
 * I Installed Anaconda for Python 3.7.0 64-bit to have access to more Python libraries, although that should not be necessary for RF.
 * Using the Selenium library for RF requires a web driver for each browser being tested. You can find links to these web drivers at [seleniumhq.org](https://www.seleniumhq.org/download/).
   * You will need to add the directory where you install the web drivers to your PATH variable so RF can run them.
   * There are a couple special considerations when testing Internet Explorer:
    1. In __Settings -> Internet Options -> Security__, either check or uncheck __Enable Protected Mode__ for all four zones shown at the top of the Security tab so the setting is consistent between each zone.
    1. Set the zoom level to 100%.
+
+### Project Setup within RED
+* The basic project I am using for a RF project contains three main folders: _Resources_, _Results_, and _Tests_.
+  * _Tests_ contains the actual test scripts that are run.
+  * _Results_ contains the output files that are generated when the test scripts are run. 
+* For RED to write the output files to the _Results_ folder, you need to set an argument for the test script. Select "Run Configurations..." from the "Run" button drop-down menu. In the "Arguments" section at the buttom of the window, add `-d results\path`.
+* Alternatively, you can run the tests from the command line and supply the results directory there, e.g. `> robot -d results\path path\to\test\script.robot`.
 
 ## Use Cases
 There are testing libraries that allow Robot Framework to a wide variety of testing scenarios.
