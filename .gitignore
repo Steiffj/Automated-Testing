@@ -1,1 +1,11 @@
 robotframework/.metadata
+robotframework/hello_world_scripts/Tests/*.log
+robotframework/hello_world_scripts/Tests/report.html
+robotframework/hello_world_scripts/Tests/log.html
+robotframework/hello_world_scripts/Tests/selenium-screenshot-*
+robotframework/hello_world_scripts/Tests/output.xml
+robotframework/hello_world_scripts/*.log
+robotframework/hello_world_scripts/report.html
+robotframework/hello_world_scripts/log.html
+robotframework/hello_world_scripts/selenium-screenshot-*
+robotframework/hello_world_scripts/output.xml
