@@ -16,7 +16,10 @@
 * The basic project I am using for a RF project contains three main folders: _Resources_, _Results_, and _Tests_.
   * _Tests_ contains the actual test scripts that are run.
   * _Results_ contains the output files that are generated when the test scripts are run. 
-* For RED to write the output files to the _Results_ folder, you need to set an argument for the test script. Select "Run Configurations..." from the "Run" button drop-down menu. In the "Arguments" section at the buttom of the window, add `-d results\path`.
+* For RED to write the output files to the _Results_ folder, you need to set an argument for the test script. 
+  * Select "Run Configurations..." from the "Run" button drop-down menu. Switch to the "Common" tab. 
+  * Under "Standard Input and Output", check "Output File". 
+  * Click the "Workspace" button and select the desired Results folder. (You can set it anywhere in the file system instead using the "File System..." button.)
 * Alternatively, you can run the tests from the command line and supply the results directory there, e.g. `> robot -d results\path path\to\test\script.robot`.
 
 ## Use Cases
