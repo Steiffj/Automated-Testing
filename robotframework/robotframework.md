@@ -24,6 +24,7 @@
 
 ## Resources
 * [Robot Framework User Guide](http://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html)
+* [RED User Guide](http://nokia.github.io/RED/help/)
 * [Locators in Selenium](http://robotframework.org/SeleniumLibrary/SeleniumLibrary.html)
 
 ## Use Cases
