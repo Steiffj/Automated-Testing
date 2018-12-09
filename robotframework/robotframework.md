@@ -23,6 +23,7 @@
 * Alternatively, you can run the tests from the command line and supply the results directory there, e.g. `> robot -d results\path path\to\test\script.robot`.
 
 ## Resources
+* [Robot Framework User Guide](http://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html)
 * [Locators in Selenium](http://robotframework.org/SeleniumLibrary/SeleniumLibrary.html)
 
 ## Use Cases
