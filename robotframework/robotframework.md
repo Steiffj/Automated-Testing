@@ -22,6 +22,9 @@
   * Click the "Workspace" button and select the desired Results folder. (You can set it anywhere in the file system instead using the "File System..." button.)
 * Alternatively, you can run the tests from the command line and supply the results directory there, e.g. `> robot -d results\path path\to\test\script.robot`.
 
+## Resources
+* [Locators in Selenium](http://robotframework.org/SeleniumLibrary/SeleniumLibrary.html)
+
 ## Use Cases
 There are testing libraries that allow Robot Framework to a wide variety of testing scenarios.
 * See [pypi.org](https://pypi.org/search/?q=robotframework) for many of these libraries. I have listed some specific libraries of note below. All these libraries are installed using PIP.
