@@ -26,6 +26,7 @@
 * [Robot Framework User Guide](http://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html)
 * [RED User Guide](http://nokia.github.io/RED/help/)
 * [SeleniumLibrary Documentation](http://robotframework.org/SeleniumLibrary/SeleniumLibrary.html)
+* [AutoItLibrary](https://code.google.com/archive/p/robotframework-autoitlibrary/) - contains install requirements and links.
 
 ## Use Cases
 There are testing libraries that allow Robot Framework to a wide variety of testing scenarios.
