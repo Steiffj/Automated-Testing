@@ -9,8 +9,8 @@ Test Teardown    Common.Web.End Web Test
 
 # These would happen at the beginning/end of running all the tests in the Test Cases section.
 # They could be especially useful for inserting data required for the tests, and then deleting it from the database at the end.
-# Suite Setup    ...
-# Suite Teardown    ...
+ Suite Setup    Insert Test Data
+ Suite Teardown    Remove Test Data
 
 *** Test Cases ***
 User must sign in to check out
