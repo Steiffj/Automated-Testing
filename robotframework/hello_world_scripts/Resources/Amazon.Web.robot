@@ -1,26 +1,29 @@
 *** Settings ***
 Library    SeleniumLibrary
+Resource    Page_Objects/LandingPage.robot
+Resource    Page_Objects/Cart.robot
+Resource    Page_Objects/Product.robot
+Resource    Page_Objects/SearchResults.robot
+Resource    Page_Objects/SignIn.robot
+Resource    Page_Objects/TopNav.robot
 
 *** Keywords ***
     
 Search for Products
-    Go To    https://www.amazon.com
-    Wait Until Page Contains    Your Amazon.com
-	Input Text    id=twotabsearchtextbox    FiiO FH5
-	Click Button    xpath=//*[@id="nav-search"]/form/div[2]/div/input
-	Wait Until Page Contains    results for "FiiO FH5"
+    LandingPage.Load
+    LandingPage.Verify Page Loaded
+	TopNav.Search for Products
+	SearchResults.Verify Search Completed
     
 Select Product from Search Results
-    Click Link    css=#result_0 a.s-access-detail-page
-	Wait Until Page Contains    Back to search results
+    SearchResults.Click Product Link
+	Product.Verify Page Loaded
     
 Add Product to Cart
-    Click Button    id=add-to-cart-button
-	Wait Until Page Contains    No Thanks
-	Sleep    2s
-	Click Element    xpath://*[@id="a-popover-6"]/div/header/button
-	Wait Until Page Contains    Added to Cart
+    Product.Add to Cart
+	Product.Decline Offer
+	Cart.Verify Product Added
     
 Begin Checkout
-    Click Link    css=#hlb-ptc-btn-native
-    Page Should Contain    Sign in
+    Cart.Proceed to Checkout
+    SignIn.Verify Page Loaded
