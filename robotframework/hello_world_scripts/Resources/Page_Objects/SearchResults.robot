@@ -3,7 +3,7 @@ Library  SeleniumLibrary
 
 *** Keywords ***
 Verify Search Completed
-    Wait Until Page Contains  results for "FiiO FH5"
+    Wait Until Page Contains  results for "${SEARCH TERM}"
 
 Click Product Link
     [Documentation]  Clicks on the first product in the search results list

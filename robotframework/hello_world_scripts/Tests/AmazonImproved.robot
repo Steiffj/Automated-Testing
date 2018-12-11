@@ -12,6 +12,11 @@ Test Teardown    Common.Web.End Web Test
  Suite Setup    Insert Test Data
  Suite Teardown    Remove Test Data
 
+*** Variables ***
+${BROWSER} =  ie
+${URL} =    https://www.amazon.com
+${SEARCH TERM} =    FiiO FH5
+
 *** Test Cases ***
 User must sign in to check out
     [Documentation]    When a user adds an item to their cart and proceeds to checkout, they must log in before continuing.

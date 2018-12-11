@@ -8,7 +8,7 @@ Search for Products
     Submit Search
 
 Enter Search Term
-    Input Text  id=twotabsearchtextbox  FiiO FH5
+    Input Text  id=twotabsearchtextbox  ${SEARCH TERM}
 
 Submit Search
     Click Button  xpath=//*[@id="nav-search"]/form/div[2]/div/input
