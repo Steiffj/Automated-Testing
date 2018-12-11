@@ -5,7 +5,7 @@
 * I am using the Nokia RED IDE (the standalone version), which is available [on GitHub](https://github.com/nokia/RED). It is based on Eclipse, and there is a version of it available on the Eclipse Marketplace.
   * [Download page](https://github.com/nokia/RED/releases/tag/0.8.9)
   * [Installation instructions](https://github.com/nokia/RED/blob/master/installation.md)
-* I Installed Anaconda for Python 3.7.0 64-bit to have access to more Python libraries, although that should not be necessary for RF.
+* I installed Anaconda for Python 3.7.0 64-bit to have access to more Python libraries, although that should not be necessary for RF. I have not confirmed it yet, but I have read some reports of the RF AutoIt library requiring a 32-bit version of Python. Those posts were from four years ago (or longer) so hopefully this is no longer the case.
 * Using the Selenium library for RF requires a web driver for each browser being tested. You can find links to these web drivers at [seleniumhq.org](https://www.seleniumhq.org/download/).
   * You will need to add the directory where you install the web drivers to your PATH variable so RF can run them.
   * There are a couple special considerations when testing Internet Explorer:
@@ -25,7 +25,8 @@
 ## Resources
 * [Robot Framework User Guide](http://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html)
 * [RED User Guide](http://nokia.github.io/RED/help/)
-* [Locators in Selenium](http://robotframework.org/SeleniumLibrary/SeleniumLibrary.html)
+* [SeleniumLibrary Documentation](http://robotframework.org/SeleniumLibrary/SeleniumLibrary.html)
+* [AutoItLibrary](https://code.google.com/archive/p/robotframework-autoitlibrary/) - contains install requirements and links.
 
 ## Use Cases
 There are testing libraries that allow Robot Framework to a wide variety of testing scenarios.
